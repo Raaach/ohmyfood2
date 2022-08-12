@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,GAAG,EAAE,IAAI;EACT,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,MAAM;CAIlB;;AAXD,AAQK,KARA,CAQA,CAAC,CAAA;EACC,SAAS,EAAE,MAAM;CACpB",
+    "sources": [
+        "city.scss"
+    ],
+    "names": [],
+    "file": "city.css"
+}

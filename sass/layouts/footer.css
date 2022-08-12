@@ -1,0 +1,17 @@
+footer {
+  background-color: #353535;
+  padding: 15px 2rem;
+}
+
+footer h2 {
+  font-family: "shrikhand", "sans-serif";
+  font-weight: 500;
+  color: #f6f6f6;
+  padding: 7px 0;
+}
+
+footer p {
+  padding: 0.2rem;
+  color: #f6f6f6;
+}
+/*# sourceMappingURL=footer.css.map */

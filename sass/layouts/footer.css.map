@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,MAAM,CAAA;EACF,gBAAgB,ECET,OAAO;EDDd,OAAO,EAAE,SAAS;CAWrB;;AAbD,AAGI,MAHE,CAGF,EAAE,CAAA;EACE,WAAW,EAAE,yBAAyB;EACtC,WAAW,EAAE,GAAG;EAChB,KAAK,ECRA,OAAO;EDSZ,OAAO,EAAE,KAAK;CACjB;;AARL,AASI,MATE,CASF,CAAC,CAAA;EACG,OAAO,EAAE,MAAM;EACf,KAAK,ECbA,OAAO;CDcf",
+    "sources": [
+        "footer.scss",
+        "../utils/colors.scss"
+    ],
+    "names": [],
+    "file": "footer.css"
+}
