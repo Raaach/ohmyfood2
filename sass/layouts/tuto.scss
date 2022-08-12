@@ -1,0 +1,49 @@
+@import"../utils/mixins.scss";
+@import"../utils/variables.scss";
+@import"../utils/colors.css";
+//@import"../utils/zoom.scss";
+
+
+.tuto {
+    //counter-reset: steps;
+    margin-bottom: 2rem;
+    ol{
+        display: flex;
+        gap: 1rem;
+        @media (max-width:900px){
+            flex-direction: column;
+        }
+    }
+    li{
+        display: flex;
+        position: relative;
+        .number{
+            color:white;
+            background-color: #9356dc;
+            display: grid;
+            place-items: center;
+            height: 2*$tuto-bull-h;
+            width: 2*$tuto-bull-h;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -1rem;
+            transform: translateY(-50%) ;
+        }
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 1.3rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include base-shadow;
+        :hover{
+        transform: scale(1.02);
+        //@include transform-zoom;
+        }
+        i{
+            margin-right: 1rem;
+            color: #7e7e7e;
+            font-size: 1.5rem;
+        }
+    }
+}

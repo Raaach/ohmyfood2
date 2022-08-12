@@ -1,0 +1,17 @@
+@import"../utils/colors.scss";
+
+
+footer{
+    background-color: $darkgrey;
+    padding: 15px 2rem;
+    h2{
+        font-family: "shrikhand", "sans-serif";
+        font-weight: 500;
+        color: $lightergrey;
+        padding: 7px 0;
+    }
+    p{
+        padding: 0.2rem;
+        color: $lightergrey;
+    }
+}
