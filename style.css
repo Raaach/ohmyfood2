@@ -182,10 +182,13 @@ header {
 }
 
 .tuto li {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 1.3rem 2rem;
@@ -216,6 +219,7 @@ header {
 .tuto li:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  color: #9356dc;
   background-color: #f2eafb;
 }
 

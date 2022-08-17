@@ -15,8 +15,9 @@
         }
     }
     li{
-        display: flex;
         position: relative;
+        display: flex;
+        align-items: center;
         .number{
             color:white;
             background-color: #9356dc;
@@ -40,6 +41,9 @@
         transform: scale(1.02);
         //@include transform-zoom;
         background-color: lighten($purple, 35%);
+        i::before{
+            color: $purple;            
+        }
         }
         i{
             margin-right: 1rem;
