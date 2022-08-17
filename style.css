@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-@import url(/Users/rachidmarir/Desktop/Projet_3/ohmyfood/sass/utils/colors.css);
+@import url("/Users/rachidmarir/Desktop/Projet_3/ohmyfood/sass/utils/colors.css");
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -219,8 +219,11 @@ header {
 .tuto li:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  color: #9356dc;
   background-color: #f2eafb;
+}
+
+.tuto li:hover i::before {
+  color: #9356dc;
 }
 
 .tuto li i {
