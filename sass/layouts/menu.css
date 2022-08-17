@@ -39,6 +39,7 @@
   height: 15rem;
   border-radius: 1rem;
   background-size: cover;
+  background-position: center;
 }
 
 #acceuil .menus .cards .__image1 {

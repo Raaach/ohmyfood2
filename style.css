@@ -169,7 +169,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (max-width: 900px) {
@@ -213,9 +213,10 @@ header {
           transform: translateY(-50%);
 }
 
-.tuto li :hover {
+.tuto li:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  background-color: #f2eafb;
 }
 
 .tuto li i {
@@ -265,6 +266,7 @@ header {
   height: 15rem;
   border-radius: 1rem;
   background-size: cover;
+  background-position: center;
 }
 
 #acceuil .menus .cards .__image1 {
