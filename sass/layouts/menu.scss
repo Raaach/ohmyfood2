@@ -15,7 +15,7 @@
                 position: relative;
             }
             .new::before{
-                content: "nouveau";
+                content: "Nouveau";
                 position: absolute;
                 height: 2rem;
                 width:5rem;
@@ -25,13 +25,14 @@
                 place-items: center;
                 right: 1rem;
                 top: 1rem;
+                border-radius: 3px;
             }
         }
         
         .cards{
             .cards__image{
                 height: 15rem;
-                border-radius: 1rem;
+                border-radius: 1rem 1rem 0 0;
                 background-size: cover;
                 background-position: center;
             }
