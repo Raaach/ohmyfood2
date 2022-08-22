@@ -1,0 +1,140 @@
+@import"../utils/mixins.scss";
+@import"../utils/variables.scss";
+@import"../utils/colors.scss";
+@import"../utils/animation.scss";
+
+body{
+    background-color: $lightergrey;
+}
+
+#pagesresto1{
+    header::before{
+        @include font-awesome($font-weight:900);
+        content:"\f060";
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+    .banniere img{
+        display: block;
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .tittle_resto1 {
+        margin-top: -2rem;
+        h2{
+            font-family: "Shrikhand", "sans-serif";
+            padding: 2rem 1rem;
+            @include heart-animated;
+            border-radius: 2rem 2rem 0 0;
+            background-color: $lightergrey;
+        }
+    }  
+    .resto__main{
+        padding: 0 1rem;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem; 
+        @media (max-width: $breakpoint)
+        {
+            grid-template-columns: 1fr;
+        }
+        h3{
+            text-transform: uppercase;
+            font-weight: 400;
+            position: relative;
+            margin-bottom: 1rem;
+            &::after{
+                content: "";
+                position:absolute;
+                top: 1.5rem;
+                left: 0rem;
+                height: 0.25rem;
+                width: 3rem;
+                background-color: $tertiary;
+            }
+        }
+        
+        .menu__category{
+            overflow:hidden;
+            .menu-item{
+                $numberofitems: 3;
+                @for $i from 1 through $numberofitems{
+                    &:nth-child(#{$i}){
+                       animation-delay: 100ms*$i;
+                    }
+                }
+                background-color: white;
+                display: flex;
+                overflow:hidden;
+                border-radius: 1rem;
+                margin: 0.5rem;
+                @include base-shadow;
+                animation: appear 2s;
+                animation-fill-mode: both;
+
+                .item__description{
+                    padding: 1rem;
+                    overflow: hidden;
+                    h4,p{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .price-item{
+                    margin-left: auto;
+                    font-weight: 900;
+                    padding: 1rem;
+                    display: flex;
+                    align-items: flex-end;
+                
+                }
+                .slide-item{
+                    display: grid;
+                    place-items: center;
+                    flex-shrink: 0;
+                    $button-width: 4rem;
+                    background-color: $tertiary;
+                    margin-right: -$button-width;
+                    width: $button-width;
+                    border-radius: 0 1rem 1rem 0;
+                    transition: margin-right 0.5s;
+                   i{
+                    display: grid;
+                    place-items: center;
+                    background-color: white;
+                    aspect-ratio: 1;
+                    width: 2rem;
+                    border-radius: 1rem;
+                    color: $tertiary;
+                   }    
+                }
+                &:hover {
+                    cursor: pointer;
+                    .slide-item{
+                    margin-right: 0;
+                    }
+                    i{
+                        @include quarterspin;
+                        animation: quarterspin 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    
+    }
+    section.order{
+        height: 15vh;
+        display: grid;
+        place-items: center;
+        button{
+            @include button;
+        }
+    }
+}

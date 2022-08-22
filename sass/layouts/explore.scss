@@ -1,0 +1,57 @@
+@import"../utils/mixins.scss";
+@import "../utils/colors.scss";
+
+.explore{
+    text-align: center;
+
+     h2{
+    font-size: 2rem;
+    }
+    p{
+    font-size: 1rem;
+    }
+    button{
+    @include button;
+    }
+}
+
+.loader{
+    $animation-duration: 1s;
+    $animation-count: 3;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    height: 100vh;
+    inset: 0;
+    z-index: 2;
+    opacity: 0.9;
+    animation: disappear 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: $animation-duration*$animation-count;
+    transform-origin: bottom;
+    &::after{
+        content: "";
+        height: 100px;
+        width: 100px;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $purple;
+        border-radius: 50%;
+        animation: spin $animation-duration ease;
+        animation-iteration-count: $animation-count;
+    }
+}
+@keyframes disappear{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0); 
+    }
+}
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}

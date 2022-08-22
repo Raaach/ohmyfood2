@@ -1,0 +1,126 @@
+#acceuil .menus {
+  background-color: #f6f6f6;
+}
+
+#acceuil .menus .menus__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  #acceuil .menus .menus__cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#acceuil .menus .menus__cards .new {
+  position: relative;
+}
+
+#acceuil .menus .menus__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 3px;
+}
+
+#acceuil .menus .cards .cards__image {
+  height: 15rem;
+  border-radius: 1rem 1rem 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+#acceuil .menus .cards .__image1 {
+  background-image: url("assets/restaurants/menu1.jpg");
+}
+
+#acceuil .menus .cards .__image2 {
+  background-image: url("assets/restaurants/menu2.jpg");
+}
+
+#acceuil .menus .cards .__image3 {
+  background-image: url("assets/restaurants/menu3.jpg");
+}
+
+#acceuil .menus .cards .__image4 {
+  background-image: url("assets/restaurants/menu4.jpg");
+}
+
+#acceuil .menus .cards__description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+#acceuil .menus .cards__description::before {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 2rem;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: inherit;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#acceuil .menus .cards__description::after {
+  display: inline-block;
+  position: absolute;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialised;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: 2rem;
+  right: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(0deg, #9356dc, #ff79da);
+}
+
+#acceuil .menus .cards__description:hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+}
+
+#acceuil .menus .cards__description h3,
+#acceuil .menus .cards__description p {
+  padding: 0.3rem;
+}
+/*# sourceMappingURL=menu.css.map */
