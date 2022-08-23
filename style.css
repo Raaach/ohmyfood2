@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 @import url(/Users/rachidmarir/Desktop/Projet_3/ohmyfood/sass/utils/colors.css);
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
@@ -46,9 +46,13 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
-  background-color: #f3F3F3;
+  background-color: #eaeaea;
   text-align: center;
   padding: 0.5rem;
+}
+
+.city h2 {
+  font-weight: 400;
 }
 
 .city i {
