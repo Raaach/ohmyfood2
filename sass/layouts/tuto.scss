@@ -1,12 +1,16 @@
 @import"../utils/mixins.scss";
 @import"../utils/variables.scss";
 @import"../utils/colors.css";
-//@import"../utils/zoom.scss";
 
 
 .tuto {
-    //counter-reset: steps;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    padding: 3.5rem 1rem 4rem 0;
+    background-color: white;
+    h2{
+        margin-left: 1.5rem;
+        padding-bottom: 1rem;
+    }
     ol{
         display: flex;
         gap: 2rem;
@@ -39,7 +43,6 @@
         @include base-shadow;
         &:hover{
         transform: scale(1.02);
-        //@include transform-zoom;
         background-color: lighten($purple, 35%);
         i::before{
             color: $purple;            

@@ -162,7 +162,14 @@ header h1 {
 }
 
 .tuto {
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding: 4rem 1rem 4rem 0;
+  background-color: white;
+}
+
+.tuto h2 {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .tuto ol {
