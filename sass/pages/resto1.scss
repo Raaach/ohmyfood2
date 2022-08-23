@@ -48,7 +48,7 @@ body{
             text-transform: uppercase;
             font-weight: 400;
             position: relative;
-            margin-bottom: 1rem;
+            margin: 0 1rem 1.4rem 1rem;
             &::after{
                 content: "";
                 position:absolute;
@@ -85,6 +85,11 @@ body{
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
+                    }
+                    P{
+                        margin-top: 0.2rem;
+                        font-size: 14px;
+                        font-weight: 300;
                     }
                 }
                 .price-item{

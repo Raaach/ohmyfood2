@@ -556,7 +556,7 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1.4rem 1rem;
 }
 
 #pagesresto1 .menu h3::after {
@@ -613,6 +613,12 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+#pagesresto1 .menu .menu__category .menu-item .item__description P {
+  margin-top: 0.2rem;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 #pagesresto1 .menu .menu__category .menu-item .price-item {
