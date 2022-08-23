@@ -5,13 +5,16 @@
     text-align: center;
 
      h2{
-    font-size: 2rem;
+        margin: 2rem 1rem 1rem 1rem;
+        font-size: 1.7rem;
     }
     p{
-    font-size: 1rem;
+        margin: 1.3rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 100;
     }
     button{
-    @include button;
+        @include button;
     }
 }
 
