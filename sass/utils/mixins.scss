@@ -30,7 +30,7 @@
 }
 
 
-@mixin heart($opacity: 1, $font-weight: 400, $color: inherit) {
+@mixin heart($opacity: 1, $font-weight: 100, $color: inherit) {
     @include font-awesome($font-weight);
     content: "\f004";
     font-size: 2rem;

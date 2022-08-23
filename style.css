@@ -275,6 +275,12 @@ header h1 {
   border-radius: 3px;
 }
 
+#acceuil .menus .menus__cards a {
+  -webkit-box-shadow: 0 0 45px lightgrey;
+          box-shadow: 0 0 45px lightgrey;
+  border-radius: 1rem;
+}
+
 #acceuil .menus .cards .cards__image {
   height: 13rem;
   border-radius: 1rem 1rem 0 0;
@@ -302,6 +308,7 @@ header h1 {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
+  padding-left: 1rem;
 }
 
 #acceuil .menus .cards__description::before {
@@ -312,7 +319,7 @@ header h1 {
   text-rendering: auto;
   -webkit-font-smoothing: antialised;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 100;
   content: "\f004";
   font-size: 2rem;
   right: 1rem;
@@ -358,9 +365,12 @@ header h1 {
           transform: translateY(-50%) scale(1.1);
 }
 
-#acceuil .menus .cards__description h3,
+#acceuil .menus .cards__description h3 {
+  padding: 1rem 0 0.3rem 0;
+}
+
 #acceuil .menus .cards__description p {
-  padding: 0.3rem;
+  padding: 0 0 1rem 0;
 }
 
 footer {
@@ -460,7 +470,7 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialised;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 100;
   content: "\f004";
   font-size: 2rem;
   right: 1rem;
