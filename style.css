@@ -234,6 +234,11 @@ header h1 {
 
 #acceuil .menus {
   background-color: #f6f6f6;
+  margin: 1.3rem;
+}
+
+#acceuil .menus h2 {
+  margin: 4rem 0 2rem 0;
 }
 
 #acceuil .menus .menus__cards {
@@ -271,7 +276,7 @@ header h1 {
 }
 
 #acceuil .menus .cards .cards__image {
-  height: 15rem;
+  height: 13rem;
   border-radius: 1rem 1rem 0 0;
   background-size: cover;
   background-position: center;
@@ -361,6 +366,7 @@ header h1 {
 footer {
   background-color: #353535;
   padding: 15px 2rem;
+  margin-top: 5rem;
 }
 
 footer h2 {

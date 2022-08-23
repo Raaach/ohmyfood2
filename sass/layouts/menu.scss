@@ -3,7 +3,10 @@
 #acceuil{
     .menus{
         background-color: #f6f6f6;
-        
+        margin: 1.3rem;
+        h2{
+            margin: 4rem 0 2rem 0;
+        }
         .menus__cards{
             display: grid;
             grid-template-columns: repeat(2,1fr);
@@ -27,11 +30,15 @@
                 top: 1rem;
                 border-radius: 3px;
             }
+            a{
+                box-shadow: 0 0 45px lightgrey;
+                border-radius: 1rem;
+            }
         }
         
         .cards{
             .cards__image{
-                height: 15rem;
+                height: 13rem;
                 border-radius: 1rem 1rem 0 0;
                 background-size: cover;
                 background-position: center;
@@ -52,9 +59,12 @@
         }
         & .cards__description{
             @include heart-animated;
-            h3,
+            padding-left: 1rem;
+            h3{
+                padding: 1rem 0 0.3rem 0;
+            }
             p{
-                padding: 0.3rem;
+                padding: 0 0 1rem 0;
             }
         }
     }
