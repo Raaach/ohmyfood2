@@ -19,7 +19,7 @@ body{
     .banniere img{
         display: block;
         width: 100%;
-        height: 70vh;
+        height: 40vh;
         object-fit: cover;
         object-position: center;
     }
@@ -140,6 +140,10 @@ body{
         place-items: center;
         button{
             @include button;
+            padding: 1.1rem 3rem;
         }
+    }
+    footer{
+        margin-top: 2rem;
     }
 }
