@@ -70,14 +70,14 @@
   background-image: url("assets/restaurants/menu4.jpg");
 }
 
-#acceuil .menus .cards__description {
+#acceuil .menus .cards__description .heart {
   position: relative;
   background-color: white;
   border-radius: 0 0 1rem 1rem;
   padding-left: 1rem;
 }
 
-#acceuil .menus .cards__description::before {
+#acceuil .menus .cards__description .heart::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -85,13 +85,13 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialised;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
+  font-weight: 100;
   content: "\f004";
   font-size: 2rem;
   right: 1rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-165%);
+          transform: translateY(-165%);
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -100,7 +100,7 @@
   transition: all 200ms ease-in-out;
 }
 
-#acceuil .menus .cards__description::after {
+#acceuil .menus .cards__description .heart::after {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -113,8 +113,8 @@
   font-size: 2rem;
   right: 1rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-165%);
+          transform: translateY(-165%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -125,17 +125,17 @@
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
 }
 
-#acceuil .menus .cards__description:hover::after {
+#acceuil .menus .cards__description .heart:hover::after {
   opacity: 1;
-  -webkit-transform: translateY(-50%) scale(1.1);
-          transform: translateY(-50%) scale(1.1);
+  -webkit-transform: translateY(-165%) scale(1.1);
+          transform: translateY(-165%) scale(1.1);
 }
 
 #acceuil .menus .cards__description h3 {
-  padding: 1rem 0 0.3rem 0;
+  padding: 1rem 0 0.3rem 1rem;
 }
 
 #acceuil .menus .cards__description p {
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem 1rem;
 }
 /*# sourceMappingURL=menu.css.map */

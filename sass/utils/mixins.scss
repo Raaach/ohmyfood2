@@ -30,13 +30,13 @@
 }
 
 
-@mixin heart($opacity: 1, $font-weight: 100, $color: inherit) {
+@mixin heart($opacity: 1, $font-weight: 100, $color: inherit, $translate: translateY(-165%) ) {
     @include font-awesome($font-weight);
     content: "\f004";
     font-size: 2rem;
     right: 1rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: $translate;        
     color: $color;
     background-clip: text;
     -webkit-background-clip: text;
@@ -44,20 +44,21 @@
     transition: all 200ms ease-in-out;
 }
 
-@mixin heart-animated {
+@mixin heart-animated ($tranlate: translateY(-165%)){
     position: relative;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
     &::before{
-        @include heart;
+        @include heart ($translate: translateY(-
+        165%));
     }
     &::after{
-        @include heart($opacity: 0, $font-weight: 900, $color: transparent);
+        @include heart($opacity: 0, $font-weight: 900, $color: transparent, $translate: translateY(-165%));
         @include gradient(1);
     }
     &:hover::after{
         opacity: 1;
-        transform: translateY(-50%) scale(1.1);
+        transform: translateY(-165%) scale(1.1);
     }
 }
 @mixin button {
@@ -76,5 +77,6 @@
     &:hover{
         transform: scale(1.02);
         opacity: 0.9;
+        box-shadow: 0px -1px 12px 3px #7e7e7e;
          }
 }

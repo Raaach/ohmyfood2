@@ -42,6 +42,7 @@
         border-radius: 1rem;
         @include base-shadow;
         &:hover{
+        cursor: pointer;
         transform: scale(1.02);
         background-color: lighten($purple, 35%);
         i::before{

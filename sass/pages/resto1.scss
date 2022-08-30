@@ -28,9 +28,11 @@ body{
         h2{
             font-family: "Shrikhand", "sans-serif";
             padding: 2rem 1rem;
-            @include heart-animated;
             border-radius: 2rem 2rem 0 0;
             background-color: $lightergrey;
+        }
+        .heart{
+            @include heart-animated ($translate: translateY(50%));
         }
     }  
     .resto__main{

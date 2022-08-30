@@ -9,10 +9,10 @@
         }
         .menus__cards{
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             @media(max-width: 900px){
-                grid-template-columns: repeat(1,1fr);
+                grid-template-columns: repeat(1, 1fr);
             }
             .new{
                 position: relative;
@@ -58,13 +58,15 @@
             }
         }
         & .cards__description{
+            .heart{
             @include heart-animated;
             padding-left: 1rem;
+            }
             h3{
-                padding: 1rem 0 0.3rem 0;
+                padding: 1rem 0 0.3rem 1rem;
             }
             p{
-                padding: 0 0 1rem 0;
+                padding: 0 0 1rem 1rem;
             }
         }
     }

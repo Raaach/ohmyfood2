@@ -14,7 +14,9 @@
   padding: 0.5rem;
 }
 
-.city h2 {
+.city input {
+  background-color: transparent;
+  border: none;
   margin: 0.8rem;
   font-weight: 400;
   font-size: 1.2rem;
@@ -23,4 +25,4 @@
 .city i {
   font-size: 1.2rem;
 }
-/*# sourceMappingURL=city.css.map */
+/*# sourceMappingURL=../css.map/city.css.map */

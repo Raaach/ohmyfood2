@@ -37,6 +37,8 @@
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   opacity: 0.9;
+  -webkit-box-shadow: 0px -1px 12px 3px #7e7e7e;
+          box-shadow: 0px -1px 12px 3px #7e7e7e;
 }
 
 .loader {
@@ -107,4 +109,4 @@
             transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=explore.css.map */
+/*# sourceMappingURL=../css.map/explore.css.map */

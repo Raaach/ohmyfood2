@@ -62,6 +62,7 @@
 }
 
 .tuto li:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   background-color: #f2eafb;
