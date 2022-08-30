@@ -32,7 +32,7 @@ body{
             background-color: $lightergrey;
         }
         .heart{
-            @include heart-animated ($translate: translateY(50%));
+            @include heart-animated ;
         }
     }  
     .resto__main{

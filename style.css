@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap");
-
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -102,6 +101,8 @@ header h1 {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   opacity: 0.9;
+  -webkit-box-shadow: 0px -1px 12px 3px #7e7e7e;
+          box-shadow: 0px -1px 12px 3px #7e7e7e;
 }
 
 .loader {
@@ -309,19 +310,19 @@ header h1 {
 }
 
 #acceuil .menus .cards .__image1 {
-  background-image: url("assets/restaurants/menu1.jpg");
+  background-image: url(assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
 #acceuil .menus .cards .__image2 {
-  background-image: url("assets/restaurants/menu2.jpg");
+  background-image: url(assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
 
 #acceuil .menus .cards .__image3 {
-  background-image: url("assets/restaurants/menu3.jpg");
+  background-image: url(assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
 #acceuil .menus .cards .__image4 {
-  background-image: url("assets/restaurants/menu4.jpg");
+  background-image: url(assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
 #acceuil .menus .cards__description .heart {
@@ -475,14 +476,17 @@ body {
 #pagesresto1 .tittle_resto1 h2 {
   font-family: "Shrikhand", "sans-serif";
   padding: 2rem 1rem;
-  position: relative;
-  background-color: white;
-  border-radius: 0 0 1rem 1rem;
   border-radius: 2rem 2rem 0 0;
   background-color: #f6f6f6;
 }
 
-#pagesresto1 .tittle_resto1 h2::before {
+#pagesresto1 .tittle_resto1 .heart {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+#pagesresto1 .tittle_resto1 .heart::before {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -505,7 +509,7 @@ body {
   transition: all 200ms ease-in-out;
 }
 
-#pagesresto1 .tittle_resto1 h2::after {
+#pagesresto1 .tittle_resto1 .heart::after {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -530,7 +534,7 @@ body {
   background-image: linear-gradient(0deg, #9356dc, #ff79da);
 }
 
-#pagesresto1 .tittle_resto1 h2:hover::after {
+#pagesresto1 .tittle_resto1 .heart:hover::after {
   opacity: 1;
   -webkit-transform: translateY(-165%) scale(1.1);
           transform: translateY(-165%) scale(1.1);
@@ -728,9 +732,11 @@ body {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   opacity: 0.9;
+  -webkit-box-shadow: 0px -1px 12px 3px #7e7e7e;
+          box-shadow: 0px -1px 12px 3px #7e7e7e;
 }
 
 #pagesresto1 footer {
   margin-top: 2rem;
 }
-/*# sourceMappingURL=sass/css.map/style.css.map */
+/*# sourceMappingURL=style.css.map */
