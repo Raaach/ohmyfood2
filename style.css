@@ -471,6 +471,7 @@ body {
 
 #pagesresto1 .tittle_resto1 {
   margin-top: -2rem;
+  position: relative;
 }
 
 #pagesresto1 .tittle_resto1 h2 {
