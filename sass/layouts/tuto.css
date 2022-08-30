@@ -1,0 +1,79 @@
+.tuto {
+  margin-top: 4rem;
+  padding: 3.5rem 1rem 4rem 0;
+  background-color: white;
+}
+
+.tuto h2 {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.tuto ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .tuto ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.tuto li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.3rem 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 1px 8px -3px #7e7e7e;
+          box-shadow: 2px 1px 8px -3px #7e7e7e;
+}
+
+.tuto li .number {
+  color: white;
+  background-color: #9356dc;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.tuto li:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #f2eafb;
+}
+
+.tuto li:hover i::before {
+  color: #9356dc;
+}
+
+.tuto li i {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=tuto.css.map */
