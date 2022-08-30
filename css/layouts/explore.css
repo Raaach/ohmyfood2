@@ -1,0 +1,60 @@
+.explore {
+  text-align: center; }
+  .explore h2 {
+    margin: 2rem 1rem 1rem 1rem;
+    font-size: 1.7rem; }
+  .explore p {
+    margin: 1.3rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 100; }
+  .explore button {
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 1.1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    transition: transform 200ms;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 2px 1px 8px -3px #7e7e7e;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); }
+    .explore button:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+      box-shadow: 0px -1px 12px 3px #7e7e7e; }
+
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  animation: disappear 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  transform-origin: bottom; }
+  .loader::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #9356dc;
+    border-radius: 50%;
+    animation: spin 1s ease;
+    animation-iteration-count: 2; }
+
+@keyframes disappear {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+@keyframes spin {
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=explore.css.map */

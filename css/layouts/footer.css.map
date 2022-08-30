@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,MAAM;EACF,gBAAgB,ECGT,OAAO;EDFd,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,IAAI;EAChB,SAAE;IACE,WAAW,EAAE,yBAAyB;IACtC,WAAW,EAAE,GAAG;IAChB,KAAK,ECRA,OAAO;IDSZ,OAAO,EAAE,KAAK;EAElB,QAAC;IACG,OAAO,EAAE,MAAM;IACf,KAAK,ECbA,OAAO",
+"sources": ["../../sass/layouts/footer.scss","../../sass/utils/colors.scss"],
+"names": [],
+"file": "footer.css"
+}
