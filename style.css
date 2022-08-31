@@ -265,14 +265,14 @@ header h1 {
 #acceuil .menus .menus__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
 @media (max-width: 900px) {
   #acceuil .menus .menus__cards {
-    -ms-grid-columns: (1fr)[1];
+
         grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -548,7 +548,7 @@ body {
 #pagesresto1 .menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+
       grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
